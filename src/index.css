@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-luxury-black: #050505;
+  --color-dark-surface: #141414;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-white antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-light;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/3 backdrop-blur-md border border-gold/20;
+  }
+  
+  .gold-text {
+    @apply text-gold;
+  }
+  
+  .gold-border {
+    @apply border-gold;
+  }
+  
+  .gold-bg {
+    @apply bg-gold;
+  }
+  
+  .nav-link {
+    @apply text-[11px] uppercase tracking-[0.1em] transition-colors duration-300;
+  }
+  
+  .service-pill {
+    @apply bg-dark-surface/80 border border-gold/30 rounded px-5 py-3 transition-all duration-300 cursor-pointer;
+  }
+
+  .doctor-badge {
+    @apply border-l-2 border-gold pl-4;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gold-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-card {
+  @apply bg-white/3 border border-white/5 hover:border-gold/30 transition-all duration-300 backdrop-blur-sm;
+}

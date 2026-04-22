@@ -1,0 +1,8 @@
+{
+  "name": "Elite Dental & Aesthetic Care",
+  "description": "Premium Dental & Aesthetic Clinic in Khairpur Mir's, Sindh. Advanced treatments including RCT, Cosmetic Dentistry, and Facial Aesthetics.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
